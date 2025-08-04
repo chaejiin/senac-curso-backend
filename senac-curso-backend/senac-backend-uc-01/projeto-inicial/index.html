@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiel Torcedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <!-- Barra lateral com ícones -->
+        <aside class="sidebar">
+            <h2>Times</h2>
+            <ul class="icons">
+                <li><img src="./assets/img/Corinthianslogo.png" alt="Corinthians" title="Corinthians"></li>
+                <li><img src="./assets/img/santoslogo.png" alt="Santos" title="Santos"></li>
+                <li><img src="./assets/img/saopaulo.png" alt="São Paulo" title="São Paulo"></li>
+                <li><img src="./assets/img/Flamengologo.webp" alt="Flamengo" title="Flamengo"></li>
+                <li><img src="./assets/img/palmeiraslogo.png" alt="Palmeiras" title="Palmeiras"></li>
+                <li><img src="./assets/img/vascologo.png" alt="Vasco" title="Vasco"></li>
+                <li><img src="./assets/img/cruzeirologo.png" alt="Cruzeiro" title="Cruzeiro"></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="container">
+            <h1>Cadastro Fácil</h1>
+            <p>Preencha o formulário abaixo com todas as informações necessárias.</p>
+
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+
+                <label for="celular">Celular com DDD:</label>
+                <input type="tel" id="celular" name="celular" placeholder="(DD) XXXXX-XXXX" required>
+
+                <label for="plano">Time do coração:</label>
+                <select id="plano" name="plano">
+                    <option value="corinthians">Corinthians</option>
+                    <option value="santos">Santos</option>
+                    <option value="spfc">São Paulo</option>
+                    <option value="flamengo">Flamengo</option>
+                </select>
+
+                <label>Você é sócio torcedor?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="socio" value="Sim"> Sim</label>
+                    <label><input type="radio" name="socio" value="Não"> Não</label>
+                </div>
+
+                <label>Receber SMS com notícias?</label>
+                <label><input type="checkbox" name="sms" value="Sim"> Sim</label>
+
+                <label for="frequencia">Frequência de ida ao estádio:</label>
+                <select id="frequencia" name="frequencia">
+                    <option value="1x">1 vez por mês</option>
+                    <option value="3x">3 vezes por mês</option>
+                    <option value="mais3x">Mais de 3 vezes por mês</option>
+                </select>
+
+                <label>Membro Pagante?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="membro" value="sim" required> Sim</label>
+                    <label><input type="radio" name="membro" value="nao"> Ainda não</label>
+                </div>
+
+                <div class="assinatura-info">
+                    <p>Se ainda não for membro pagante, faça sua assinatura em:</p>
+                    <a href="https://paixaoemcampocomsenac.com.br" target="_blank">paixaoemcampocomsenac.com.br</a>
+                </div>
+
+                <button type="submit" class="button">Confirmar Assinatura</button>
+            </form>
+
+            <div class="gif-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWSBeYU0D5962fRo-tp0mqHWttevgTCvTZNQ&s" alt="Torcedor animado">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
