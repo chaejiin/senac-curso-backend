@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Curso de Palhaço para Iniciantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login">
+        <!-- Área de imagem com quadro rabiscado -->
+        <div class="login__image-container">
+            <img id="clownImage" class="login__image" 
+                 src="./assets/img/login-palhaco.png" 
+                 alt="Palhaço">
+        </div>
+
+        <!-- Botão de boas-vindas -->
+        <button class="login__welcome-button" id="welcomeButton">
+            Welcome
+        </button>
+
+        <!-- Formulário de login -->
+        <section class="login__form-container">
+            <h2 class="login__title">Área do Aluno</h2>
+            <form class="login__form" id="loginForm">
+                <input type="text" class="login__input login__input--username" placeholder="Nome de usuário" required>
+                <input type="password" class="login__input login__input--password" placeholder="Senha" required>
+                <button type="submit" class="login__button">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Elementos de circo arrastáveis -->
+    <img src="https://static.vecteezy.com/system/resources/previews/009/381/351/non_2x/circus-element-clipart-design-illustration-free-png.png" class="circus-item circus-item--popcorn" draggable="true" alt="Pipoca">
+    <img src="https://rcbxpersonalizados.wordpress.com/wp-content/uploads/2015/02/circo-elefantes-bola1.png" class="circus-item circus-item--popcorn" draggable="true" alt="Monociclo">
+    <img src="https://rcbxpersonalizados.files.wordpress.com/2015/02/circo-leaozinho1.png" class="circus-item circus-item--balls" draggable="true" alt="Bolas de malabares">
+
+    <script src="script.js"></script>
+</body>
+</html>
+
