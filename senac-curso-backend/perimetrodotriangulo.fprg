@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="perimetrodotriangulo"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 03:12:29 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xMzsiMDM6MDg6MTcgIjszNjky"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xMzsiMDM6MTI6MjkgIjsxOzM3OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l1, l2, l3" type="Real" array="False" size=""/>
+            <declare name="perimetrodotriangulo" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o lado 1 do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="l1"/>
+            <output expression="&quot;Digite o lado 2 do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="l2"/>
+            <output expression="&quot;Digite o lado 3 do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="l3"/>
+            <assign variable="perimetrodotriangulo" expression="(l1+l2+l3)"/>
+            <output expression="&quot;O per&#237;metro do tri&#226;ngulo &#233; &quot; &amp; perimetrodotriangulo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

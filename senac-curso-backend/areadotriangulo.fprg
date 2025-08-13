@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="areadotriangulo"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 03:06:49 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xMzsiMDM6MDA6MjAgIjszNjc4"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xMzsiMDM6MDY6NDkgIjsxOzM4MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura" type="Real" array="False" size=""/>
+            <declare name="areadotriangulo" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a base do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Digite a altura do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="areadotriangulo" expression="(base*altura)/2"/>
+            <output expression="&quot;A &#225;rea do tri&#226;ngulo &#233; &quot; &amp; areadotriangulo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
