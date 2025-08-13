@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="algoritmomedia"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 02:46:42 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xMzsiMDE6NDc6MzUgIjszNjkz"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xMzsiMDI6NDY6NDIgIjs0OzM4MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aluno" type="String" array="False" size=""/>
+            <declare name="n1, n2, n3, n4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do aluno&quot;" newline="True"/>
+            <input variable="aluno"/>
+            <output expression="&quot;Digite a primeira nota&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite a segunda nota&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite a terceira nota&quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Digite a quarta nota&quot;" newline="True"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="(n1+n2+n3+n4)/4"/>
+            <output expression="&quot;A m&#233;dia do aluno &#233; &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
