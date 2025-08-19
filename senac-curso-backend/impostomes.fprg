@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="impostomes"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 03:00:29 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xOTsiMDI6NDE6MDQgIjszNjkw"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xOTsiMDM6MDA6MjkgIjsxOzM4MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contribuinte" type="String" array="False" size=""/>
+            <declare name="renda" type="Real" array="False" size=""/>
+            <declare name="impostomes" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do contribuinte&quot;" newline="True"/>
+            <input variable="contribuinte"/>
+            <output expression="&quot;Digite o sal&#225;rio bruto mensal&quot;" newline="True"/>
+            <input variable="renda"/>
+            <assign variable="impostomes" expression="(renda*0.0775)"/>
+            <output expression="&quot;O c&#225;lculo do imposto devido &#233; &quot; &amp; impostomes" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

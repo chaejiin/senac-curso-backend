@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CelsiuspFahrenheit"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 03:10:10 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xOTsiMDM6MDI6MDYgIjszNjkw"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0xOTsiMDM6MTA6MTAgIjsxOzM3OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius, fahrenheit" type="Real" array="False" size=""/>
+            <declare name="conversao" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite em Celsius para convers&#227;o de temperatura&quot;" newline="True"/>
+            <input variable="celsius"/>
+            <assign variable="conversao" expression="(celsius*1.8)+32"/>
+            <output expression="&quot;Celsius para Fahrenheit &#233; = &quot; &amp; conversao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
