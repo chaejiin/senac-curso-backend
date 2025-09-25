@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <title>Consulta por região</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <h1>Consulta por região</h1>
     <form method="get" action="./pages/region.php">
-        <label for="cep">Digite o nome de uma região da Europa:</label>
-        <input type="text" name="regiaoBuscada" id="regiao" placeholder="Ex: Poland" required>
+        <label for="regiao">Digite o nome de uma região (em inglês):</label>
+        <input type="text" name="regiaoBuscada" id="regiao" placeholder="Ex: Americas, Europe, Asia" required>
         <button type="submit">Buscar</button>
     </form>
 </body>
-
 </html>
