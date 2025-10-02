@@ -5,6 +5,23 @@
 //Itens do array devem ser números 
 //Array não pode ser vazio 
 
+function validarEntradas($nome, $notas)
+{
+    if (isset($nome) && count($notas) == 0 || (!preg_match('/^[A-Za-z\s]+$/', $nome)) && (!is_numeric($notas))){
+        return false;
+    } else {
+        return true;
+        // volta para a página de calculo - redirecionamento
+    }
+}
+
+function darBoasVindas()
+{
+    date_default_timezone_set('America/Sao_Paulo');
+    $hora = date("H:i:s"); //?
+    echo "Hello World Function, {$hora}";
+}
+
 function calcularMedia(array $arrayNotas): float
 {
     // Evita divisão por zero se o array estiver vazio
@@ -33,6 +50,10 @@ function obterMensagemStatus(bool $foiAprovado): string
  
 $nome = isset($_GET['nome']) ? trim($_GET['nome']) : 'Visitante';
 $notas = isset($_GET['notas']) && is_array($_GET['notas']) ? $_GET['notas'] : [];
+if (validarEntradas($nome, $notas) == true) {
+} else {
+    header('location: ../index.html');
+}
  
 // Execução das funções
 $media = calcularMedia($notas);
@@ -41,6 +62,7 @@ $foiAprovado = verificarAprovacao($media);
 // Definição das variáveis para serem usadas no HTML
 $mensagemBoasVindas = "Olá, " . htmlspecialchars($nome) . "! Sua média é: " . number_format($media, 1, ',', '.');
 $mensagemResultado = obterMensagemStatus($foiAprovado);
+darBoasVindas()
  
 ?>
 <!DOCTYPE html>

@@ -31,20 +31,16 @@ function verificarAprovacao($umaMedia)
 // pode ter quantos parâmetros quiser dentro da função ex.: function chamarProfessor(nomeprofessor,local){
 //}
 
-function mostrarMensagem($mensagem){
-    echo $mensagem;
- 
-}
  
 function passouMedia($aprovacao){
-     $mensagemAprovacao = $aprovacao == true ? "Você passou de ano" : "Você reprovou de ano" ;
+     return $mensagemAprovacao = $aprovacao == true ? "Você passou de ano" : "Você reprovou de ano" ;
  
     //if ($aprovacao=true) {
     //   $mensagemAprovacao= "Você passou de ano";
     //} else{
     //    $mensagemAprovacao= "Você reprovou de ano";
     //}
-    return $mensagemAprovacao;
+   
 }
  
 $nome = trim($_GET['nome']);
@@ -52,9 +48,11 @@ $notas = $_GET['notas'];
 $mensagemAprovacao="";
 $media=calcularMedia($notas);
 $aprovacao=verificarAprovacao($media);
-$passouMedia= passouMedia($mensagemAprovacao);
+$passouMedia= passouMedia($aprovacao);
 $media=number_format($media, 2, ',', '.');
-mostrarMensagem("Olá, {$nome}! Sua média é: {$media}<br/> {$passouMedia}");
+$mensagem="Olá, {$nome}! Sua média é: {$media}";
+$mensagem2=$passouMedia;
+
   
 //$mensagemBoasVindas = "Olá, {$nome}! Sua média é: {$media}";
 //if ($media >= 7) {
@@ -80,8 +78,8 @@ mostrarMensagem("Olá, {$nome}! Sua média é: {$media}<br/> {$passouMedia}");
 <body>
     <main class="container">
         <h1>Performance do Aluno</h1>
-        <p><?= $mensagemBoasVindas ?></p>
-        <p id="<?= $media >= 7 ? "aprovado" : "reprovado"; ?>"><?= $mensagemResultado ?></p>
+        <p><?= $mensagem ?></p>
+        <p id="<?= $aprovacao == true ? "aprovado" : "reprovado"; ?>"><?= $mensagem2 ?></p>
     </main>
 </body>
 
